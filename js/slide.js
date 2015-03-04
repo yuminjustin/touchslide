@@ -20,6 +20,7 @@
             s.width(w).height(h);
             li = $("li", s2);
             li.width(w).height(h);
+            commonOpts.rollback();
             for (var i = 0; i < n; i++) c.append("<span></span>");
             $("span:eq(0)", c).addClass("sOn");
             c.css("margin-left", c.width() * -0.5);
@@ -69,6 +70,7 @@
                 if (g < (n - 1)) g++;
                 else g = 0;
                 dote();
+                commonOpts.rollback();
             },
             prev: function () {
                 $(li[liOn.sn]).hide();
@@ -77,19 +79,20 @@
                 if (g > 0) g--;
                 else g = n - 1;
                 dote();
+                commonOpts.rollback();
             },
             move: function (data, fn) {
-                $(li[liOn.sp]).animate({
+                commonOpts.transition();
+                $(li[liOn.sp]).css({
                     "left": data.p
                 });
-                $(li[liOn.sn]).animate({
+                $(li[liOn.sn]).css({
                     "left": data.n
                 });
-                $(liOn).animate({
+                $(liOn).css({
                     "left": data.o
-                }, function () {
-                    fn();
                 });
+                transitEnd(liOn, fn);
             }
         },
         events = function () {
@@ -145,7 +148,31 @@
                         slideplay()
                     }, timeout);
             });
-
+        },
+        transitEnd = function (obj, fn) {
+            var transitoff = function () {
+                fn();
+                obj.removeEventListener("webkitTransitionEnd", transitoff, false);
+                obj.removeEventListener("transitionend", transitoff, false);
+            }
+            obj.addEventListener("webkitTransitionEnd", transitoff, false);
+            obj.addEventListener("transitionend", transitoff, false);
+        },
+        commonOpts = {
+            rollback: function () {
+                li.css({
+                    "-webkit-transition": "all 0s",
+                    "-moz-transition": "all 0s",
+                    "transition": "all 0s"
+                });
+            },
+            transition: function () {
+                li.css({
+                    "-webkit-transition": "all 0.8s",
+                    "-moz-transition": "all 0.8s",
+                    "transition": "all 0.8s"
+                });
+            }
         }
     window.touchslide = touchslide;
 })(jQuery);
