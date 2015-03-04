@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+    <title>touchslide</title>
+    <link href="css/style2.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="slideBox oh pr" id="slideBox">
+        <ul id="slider" class="pr">
+            <li class="pa">
+                <img src="images/b1.jpg" />
+            </li>
+            <li class="pa">
+                <img src="images/b2.jpg" />
+            </li>
+            <li class="pa">
+                <img src="images/b3.jpg" />
+            </li>
+            <li class="pa">
+                <img src="images/b4.jpg" />
+            </li>
+        </ul>
+        <div class="slideControl pa" id="slideControl"></div>
+    </div>
+    <script src="http://cdn.staticfile.org/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/touch.1.1.min.js"></script>
+    <script src="js/slide.min.js"></script>
+    <script>
+        (function () {
+            var st = new touchslide({
+                s: $("#slideBox"),
+                s2: $("#slider"),
+                c: $("#slideControl"),
+                t: 3000,/*默认3000可不填，最小1000，否则设置无效任然为3000*/
+                a: 1 /*默认自动可不填，0或false不自动*/
+            });
+        })();
+    </script>
+</body>
+
+</html>
