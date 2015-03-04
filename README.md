@@ -17,3 +17,5 @@
          3、无缝滚动
 ###手机扫一扫；       
 ![sl2](http://yuminjustin.cn/uploadfile/2015/0304/20150304035710520.jpg "sl2") 
+
+###详细：http://yuminjustin.cn/html/plugin/2015/0304/26.html
