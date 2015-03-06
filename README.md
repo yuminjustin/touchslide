@@ -1,5 +1,5 @@
 # touchslide
-触摸+无缝左右滚动焦点图（正在升级css3版）
+触摸+无缝左右滚动焦点图只支持css3，取代jq animate
 
 ![sl](http://yuminjustin.cn/uploadfile/2015/0304/thumb_679_482_20150304033452177.jpg "sl") 
 
@@ -15,7 +15,8 @@
          1、自动左右滚动，可设置
          2、触摸拖拽
          3、无缝滚动
-###手机扫一扫；       
+###手机扫一扫；  
 
+![sl](http://yuminjustin.cn/uploadfile/2015/0304/20150304035710520.jpg "sl") 
 
 ###详细：http://yuminjustin.cn/html/plugin/2015/0304/26.html
