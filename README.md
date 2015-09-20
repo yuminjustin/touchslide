@@ -18,6 +18,6 @@
          3、无缝滚动
 ###手机扫一扫；  
 
-![sl](http://yuminjustin.cn/upload/qrcode/touchslide/ "sl") 
+![sl](http://yuminjustin.cn/upload/qrcode/touchslide.jpg "sl") 
 
-###详细：http://yuminjustin.cn/#!/cid:c04/page:2/arc:article-plugin-201509-p014/26.html
+###详细：http://dwz.cn/1JZ2lF
