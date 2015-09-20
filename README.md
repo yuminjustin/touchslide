@@ -1,7 +1,7 @@
 # touchslide
 触摸+无缝左右滚动焦点图只支持css3，取代jq animate
 
-![sl](http://yuminjustin.cn/uploadfile/2015/0304/thumb_679_482_20150304033452177.jpg "sl") 
+![sl](http://yuminjustin.cn/upload/20150919/481813734.jpg "sl") 
 
 ###配置简单；
         var st = new touchslide({
@@ -18,6 +18,6 @@
          3、无缝滚动
 ###手机扫一扫；  
 
-![sl](http://yuminjustin.cn/uploadfile/2015/0304/20150304035710520.jpg "sl") 
+![sl](http://yuminjustin.cn/upload/qrcode/touchslide/ "sl") 
 
-###详细：http://yuminjustin.cn/html/plugin/2015/0304/26.html
+###详细：http://yuminjustin.cn/#!/cid:c04/page:2/arc:article-plugin-201509-p014/26.html
