@@ -1,4 +1,6 @@
 # touchslide
+
+#### 此插件不再维护 推荐使用成熟UI控件
 触摸+无缝左右滚动焦点图只支持css3，取代jq animate
 
 ![sl](https://yuminjustin.github.io/resource/img/uploads/481813734.jpg "sl") 
